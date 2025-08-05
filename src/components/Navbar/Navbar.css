@@ -1,0 +1,189 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  /* border-bottom: 1px solid #ccc; */
+  font-family: var(--font);
+  font-size: 18px;
+}
+
+.nav-label {
+  display: none;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+}
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1001;
+  color: var(--text);
+}
+
+.navbar-center {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.navbar-center li a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.navbar-center li a:hover {
+  color: var(--accent);
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 0px;
+}
+
+.theme-toggle-btn:hover {
+  color: #05f1f5;
+}
+
+.navbar-center li a,
+.theme-toggle-btn {
+  position: relative;
+}
+
+.navbar-center li a::after,
+.theme-toggle-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.navbar-center li a:hover::after,
+.theme-toggle-btn:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .navbar-left {
+    display: none;
+  }
+
+  .navbar-right {
+    order: 1;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .hamburger-btn {
+    order: 2;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text);
+  }
+
+  /* Mobile Menu Dropdown */
+  .navbar-center {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+    gap: 0.75rem;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  .navbar-center.show {
+    padding: 1rem;
+    max-height: 300px; /* or 100vh if you want it full screen */
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar-center li {
+    width: 100%;
+  }
+
+  .navbar-center li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-label {
+    display: inline;
+  }
+
+  .navbar-center li a::after {
+    display: none;
+  }
+}
