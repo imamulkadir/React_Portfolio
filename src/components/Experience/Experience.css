@@ -1,0 +1,171 @@
+.experience-container {
+  padding: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+.experience-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.experience-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--accent);
+  background: none;
+  color: var(--accent);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+/* .experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+} */
+
+.exp-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align top of details and logo */
+}
+
+.exp-details {
+  flex: 1;
+  gap: 1rem;
+}
+
+.experience-card img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Special case: multiple roles shown side by side */
+.experience-content.multiple-roles {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.experience-content.multiple-roles .experience-card {
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 300px;
+}
+
+/* For single-role companies, cards should still have same design */
+.experience-content:not(.multiple-roles) .experience-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.company-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--text);
+  text-align: left;
+}
+
+.role,
+.duration,
+.location {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  text-align: left;
+}
+
+.role strong,
+.duration strong,
+.location strong {
+  color: var(--accent);
+  margin-right: 0.3rem;
+}
+
+.responsibilities {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.responsibilities li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-title {
+    text-align: center;
+  }
+
+  .experience-tabs {
+    justify-content: center;
+  }
+
+  .experience-content.multiple-roles {
+    flex-direction: column;
+  }
+
+  .experience-content.multiple-roles .experience-card {
+    flex: 1 1 100%;
+  }
+
+  .experience-card {
+    padding: 1rem;
+  }
+
+  .company-name,
+  .role,
+  .duration,
+  .location {
+    text-align: left;
+  }
+
+  /* Make responsibilities list left-aligned on mobile */
+  .responsibilities {
+    text-align: left;
+    padding-left: 1.2rem;
+  }
+
+  .responsibilities li {
+    text-align: left;
+  }
+}

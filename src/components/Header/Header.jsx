@@ -19,18 +19,20 @@ const Header = () => {
 
         <div className="header-socials">
           <a
-            href="https://github.com/yourgithub"
+            href={GitHub}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
+            title="GitHub"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href={LinkedIN}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
+            title="LinkedIn"
           >
             <FaLinkedin />
           </a>

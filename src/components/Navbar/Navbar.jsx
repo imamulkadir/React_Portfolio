@@ -25,7 +25,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <span className="navbar-logo">👨‍💻</span>
+        <span className="navbar-logo">
+          <a href="#home">👨‍💻</a>
+        </span>
       </div>
 
       <button className="hamburger-btn" onClick={toggleMobileMenu}>

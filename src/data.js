@@ -1,3 +1,7 @@
+import wsdLogo from "./assets/images/wsd.png";
+import apurbaLogo from "./assets/images/apurba.png";
+import impitLogo from "./assets/images/impit.png";
+
 const header = [
   {
     name: "Imamul Kadir",
@@ -14,43 +18,54 @@ const experience = [
     role: "Filing Lead",
     duration: "June 1st, 2024 to Present",
     location: "Dhaka, Bangladesh",
+    logo: wsdLogo,
     responsibilities: [
-      "Managing and maintaining the core workload with precise and pertinent information",
-      "Assigning tasks to team members",
-      "Reviewing and submitting files to the U.S. SEC",
-      "Training new team members and monitoring quality",
-      "Assisting team members with issues during the filing process",
+      "Managing and maintaining the core workload with precise and pertinent information.",
+      "Developed an automation tool to simplify the filing process.",
+      "Created a PWA to analyze client data and provide insights.",
+      "Assign tasks fairly to optimize team productivity.",
+      "Review and submit files to the SEC on time, meeting requirements.",
+      "Train new team members, assign tasks, and monitor their work.",
+      "Help team members solve issues for a smooth filing process.",
     ],
   },
   {
     company: "Apurba Technologies Ltd.",
     role: "Assistant Team Lead",
     duration: "September 15th, 2023 to May 31st, 2024",
+    logo: apurbaLogo,
     responsibilities: [
-      "Managing core workload",
-      "Assigning team tasks",
-      "Reviewing and submitting files to the U.S. SEC",
-      "Training and task monitoring",
-      "Operational support",
+      "Oversaw the management of critical workloads with accuracy.",
+      "Coordinated task assignments to ensure fair distribution.",
+      "Reviewed and submitted files to the SEC on time and accurately.",
+      "Trained new team members, organized tasks, and tracked efficiency.",
+      "Supported team members and resolved issues for smooth operations.",
     ],
   },
   {
     company: "Apurba Technologies Ltd.",
     role: "Filing Specialist",
     duration: "March 2021 to September 15th, 2023",
+    logo: apurbaLogo,
     responsibilities: [
-      "Converting Word documents to U.S. bank webpages",
-      "Reviewing and editing files for consistency",
-      "Editing and submitting files to the U.S. SEC",
+      "Converted Word documents into web pages for U.S. banks.",
+      "Reviewed and edited files for consistency with originals.",
+      "Ensured accuracy and compliance during file reviews.",
+      "Converted and edited files for SEC submissions.",
+      "Submitted files to meet regulatory requirements.",
     ],
   },
   {
     company: "IMPIT Ltd.",
     role: "Analyst - Business Development",
     duration: "November 2020 to February 2021",
+    logo: impitLogo,
     responsibilities: [
-      "Data analysis and insight generation",
-      "Managing U.S. based clients via phone",
+      "Analyzed data to generate insights and provide data-driven recommendations.",
+      "Communicated daily with U.S. clients to meet expectations.",
+      "Handled property preservation tasks for bank-mortgaged properties.",
+      "Ensured timely maintenance and reporting for client-managed properties.",
+      "Collaborated with teams to streamline processes for property preservation.",
     ],
   },
 ];
