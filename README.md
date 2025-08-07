@@ -4,7 +4,7 @@ Personal developer portfolio built with React and Vite, showcasing my skills, wo
 
 🌐 **Live Site:** [https://imamulkadir.vercel.app/](https://imamulkadir.vercel.app/)
 
-![Portfolio Demo](./portfolio.gif)
+![Portfolio Demo](./src/assets/portfolio.gif)
 
 ---
 
