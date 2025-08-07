@@ -67,6 +67,8 @@
   font-size: 1.5rem;
   cursor: pointer;
   margin-right: 0px;
+  font-family: var(--font);
+  font-weight: 700;
 }
 
 .theme-toggle-btn:hover {

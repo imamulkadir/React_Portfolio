@@ -168,4 +168,8 @@
   .responsibilities li {
     text-align: left;
   }
+
+  .logo img {
+    display: none;
+  }
 }

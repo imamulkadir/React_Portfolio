@@ -21,7 +21,6 @@ function App() {
       <hr />
       <Experience />
       <hr />
-
       <Education />
       <Projects />
       <Certifications />
