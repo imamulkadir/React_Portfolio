@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0 2rem 0;
+  height: 80vh;
 }
 
 .header-left {
@@ -17,9 +18,10 @@
 
 .header-name {
   font-family: var(--font);
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: 4.5rem;
+  font-weight: 900;
   letter-spacing: 4px;
+  margin-bottom: 1rem;
 }
 
 .header-subtitle {
@@ -55,6 +57,9 @@
 }
 
 .download-btn {
+  width: 120px;
+  height: 25px;
+  padding: 1rem;
   background: none;
   border: 2px solid var(--accent);
   color: var(--accent);
@@ -67,6 +72,7 @@
   justify-content: center;
   transition: all 0.3s ease;
   position: relative;
+  text-decoration: none;
 }
 
 .download-btn:hover {

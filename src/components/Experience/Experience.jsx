@@ -13,7 +13,7 @@ const Experience = () => {
   const [activeCompany, setActiveCompany] = useState(companyNames[0]);
 
   return (
-    <div className="experience-container">
+    <div id="experience" className="experience-container">
       <h2 className="experience-title">Experience</h2>
 
       <div className="experience-tabs">

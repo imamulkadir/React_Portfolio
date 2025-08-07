@@ -1,6 +1,31 @@
 import wsdLogo from "./assets/images/wsd.png";
 import apurbaLogo from "./assets/images/apurba.png";
 import impitLogo from "./assets/images/impit.png";
+import ubuntuLogo from "./assets/images/ubuntu.png";
+import windowsLogo from "./assets/images/windows.png";
+import dreamweaverLogo from "./assets/images/dreamweaver.png";
+import microsoftOfficeLogo from "./assets/images/microsoftoffice.png";
+import androidStudioLogo from "./assets/images/androidstudio.png";
+import phpMyAdminLogo from "./assets/images/phpmyadmin.png";
+import bootstrapLogo from "./assets/images/bootstrap.png";
+import cssLogo from "./assets/images/css.png";
+import githubLogo from "./assets/images/github.png";
+import htmlLogo from "./assets/images/html.png";
+import javascriptLogo from "./assets/images/javascript.png";
+import flaskLogo from "./assets/images/flask.png";
+import mysqlLogo from "./assets/images/mysql.png";
+import phpLogo from "./assets/images/php.png";
+import vscodeLogo from "./assets/images/vscode.png";
+import reactLogo from "./assets/images/react.png";
+import gitLogo from "./assets/images/git.png";
+import jqueryLogo from "./assets/images/jquery.png";
+import wordpressLogo from "./assets/images/wordpress.png";
+import jsxLogo from "./assets/images/jsx.png";
+import tsxLogo from "./assets/images/tsx.png";
+import tailwindLogo from "./assets/images/tailwind.png";
+import firebaseLogo from "./assets/images/firebase.png";
+import mongodbLogo from "./assets/images/mongodb.png";
+import nodejsLogo from "./assets/images/nodejs.png";
 
 const header = [
   {
@@ -72,32 +97,26 @@ const experience = [
 
 const education = [
   {
-    degree: "B.Sc. in Computer Science and Engineering",
-    university: "Daffodil International University",
+    degree: "Bachelor of Science",
+    group: "Computer Science and Engineering",
+    institution: "Daffodil International University",
     year: "2020",
-    CGPA: "3.70",
-    thesis:
-      "aEye: Safe Navigation in Footpath for Visually Impaired Using Computer Vision Techniques",
+    GPA: "3.70",
   },
   {
-    degree: "H.S.C",
+    degree: "Higher Secondary Certificate",
     group: "Science",
     institution: "Notre Dame College",
     year: "2014",
     GPA: "5.00",
   },
   {
-    degree: "S.S.C",
+    degree: "Secondary School Certificate",
     group: "Science",
     institution: "Kishoreganj Govt. Boys' High School",
     year: "2012",
     GPA: "5.00",
   },
-];
-
-const achievements = [
-  "Board Scholarship - General, 2006 (Primary School Certificate Exam)",
-  "Board Scholarship - General, 2012 (Secondary School Certificate Exam)",
 ];
 
 const publications = [
@@ -111,52 +130,81 @@ const publications = [
 ];
 
 const skills = [
-  "JavaScript",
-  "PHP",
-  "Python",
-  "HTML",
-  "CSS",
-  "Bootstrap",
-  "jQuery",
-  "WordPress",
-  "React",
-  "Flask",
-  "VS Code",
-  "Git",
-  "GitHub",
-  "Android Studio",
-  "MySQL Workbench",
-  "phpMyAdmin",
-  "Dreamweaver",
-  "Code::Blocks",
-  "Microsoft Office",
-  "MySQL",
-  "Microsoft Access",
-  "Windows",
-  "Linux (Ubuntu)",
+  { name: "NodeJS", logo: nodejsLogo },
+  { name: "ReactJS", logo: reactLogo },
+  { name: "Tailwind CSS", logo: tailwindLogo },
+  { name: "JavaScript", logo: javascriptLogo },
+  { name: "JSX", logo: jsxLogo },
+  { name: "TypeScript", logo: tsxLogo },
+  { name: "jQuery", logo: jqueryLogo },
+  { name: "HTML", logo: htmlLogo },
+  { name: "CSS", logo: cssLogo },
+  { name: "Firebase", logo: firebaseLogo },
+  { name: "VS Code", logo: vscodeLogo },
+  { name: "Bootstrap", logo: bootstrapLogo },
+  { name: "PHP", logo: phpLogo },
+  { name: "Flask", logo: flaskLogo },
+  { name: "MongoDB", logo: mongodbLogo },
+  { name: "MySQL", logo: mysqlLogo },
+  { name: "phpMyAdmin", logo: phpMyAdminLogo },
+  { name: "Git", logo: gitLogo },
+  { name: "GitHub", logo: githubLogo },
+  { name: "WordPress", logo: wordpressLogo },
+  { name: "Dreamweaver", logo: dreamweaverLogo },
+  { name: "Android Studio", logo: androidStudioLogo },
+  { name: "Office 365", logo: microsoftOfficeLogo },
+  { name: "Ubuntu", logo: ubuntuLogo },
+  { name: "Windows", logo: windowsLogo },
 ];
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "Developed portfolio website",
-    link: "https://imamulkadir.github.io",
-    technologies: ["JavaScript", "HTML", "CSS", "jQuery", "Bootstrap"],
+    title: "React CRUD with Firebase",
+    repo: "https://github.com/imamulkadir/React_crudFirebase",
+    link: "", // Add your live URL if deployed
+    description:
+      "A CRUD application built using React and Firebase, allowing real-time create, read, update, and delete operations.",
+    techStack: ["React", "Firebase", "Firestore", "Bootstrap"],
   },
   {
-    title: "Text Recognition",
-    description: "Android app to detect text from live images",
-    technologies: ["Firebase ML Kit", "Java"],
+    title: "FoodyZone",
+    repo: "https://github.com/imamulkadir/React_FoodyZone",
+    link: "", // Add your live URL if deployed
+    description:
+      "A modern food ordering UI built with React showcasing food categories, trending items, and a responsive design.",
+    techStack: ["React", "CSS Modules", "React Router"],
   },
   {
-    title: "Covid-19 Self-Assessment",
-    description: "Website to check if user needs to consult doctor",
-    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    title: "WhatGPT3",
+    repo: "https://github.com/imamulkadir/React_WhatGPT3",
+    link: "", // Add your live URL if deployed
+    description:
+      "A landing page inspired by OpenAI's GPT-3, presenting features, use cases, and UI/UX best practices.",
+    techStack: ["React", "CSS", "Responsive Design"],
   },
   {
-    title: "Calculator",
-    description: "Simple calculator with basic operations",
-    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    title: "React Dice Game",
+    repo: "https://github.com/imamulkadir/React_DiceGame",
+    link: "#", // Add your live URL if deployed
+    description:
+      "A simple dice rolling game made with React to demonstrate state, effects, and user interaction.",
+    techStack: ["React", "JavaScript", "CSS"],
+  },
+  {
+    title: "React Contact Form",
+    repo: "https://github.com/imamulkadir/React_ContactForm",
+    link: "#", // Add your live URL if deployed
+    description:
+      "A fully functional contact form using React, including form validation and submission logic.",
+    techStack: ["React", "Form Validation", "CSS"],
+  },
+  {
+    title: "HTML Editor",
+    repo: "https://github.com/imamulkadir/HTML_Editor",
+    link: "#", // Add your live URL if deployed
+    description:
+      "A basic HTML editor that lets users type and render HTML content in real time using vanilla JS.",
+    techStack: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
@@ -167,13 +215,13 @@ const certifications = [
     certificate: "https://coursera.org/share/321af908e09f3f8e04c347a9612c21c6",
   },
   {
-    title: "Website Development (HTML, CSS) – Intermediate",
+    title: "Website Development (HTML, CSS) - Intermediate",
     provider: "Udemy",
     certificate:
       "https://udemy.com/certificate/UC-67bbd294-e4cd-4c93-b725-12a8062ffd53",
   },
   {
-    title: "HTML, JavaScript & Bootstrap – Certification Course",
+    title: "HTML, JavaScript & Bootstrap - Certification Course",
     provider: "Udemy",
     certificate:
       "https://udemy.com/certificate/UC-47a54e2e-5049-4af8-9bb8-d7d142e9e7a9",
@@ -202,7 +250,6 @@ export {
   header,
   experience,
   education,
-  achievements,
   publications,
   skills,
   projects,

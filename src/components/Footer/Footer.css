@@ -1,0 +1,37 @@
+.footer-container {
+  margin: 2rem 0 1rem 0;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  /* background-color: var(--bg); */
+  color: var(--text);
+  border-top: 1px solid var(--border);
+}
+
+.footer-icons {
+  display: flex;
+  max-width: max-content;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-icons {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons a {
+  font-size: 1.5rem;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}

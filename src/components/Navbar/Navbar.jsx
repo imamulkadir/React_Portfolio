@@ -7,7 +7,7 @@ import { HiLightBulb, HiOutlineLightBulb } from "react-icons/hi";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {

@@ -18,15 +18,18 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-      <hr />
+      <hr className="section-divider" />
       <Experience />
-      <hr />
+      <hr className="section-divider" />
       <Education />
+      <hr className="section-divider" />
       <Projects />
+      <hr className="section-divider" />
       <Certifications />
+      <hr className="section-divider" />
       <Skills />
+      <hr className="section-divider" />
       <Publications />
-      <Achievements />
       <Footer />
     </div>
   );

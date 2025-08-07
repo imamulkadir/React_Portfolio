@@ -2,7 +2,7 @@ import "./Header.css";
 import { header } from "../../data";
 import profileImage from "../../assets/images/profile.jpg";
 
-import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaHandPointRight } from "react-icons/fa";
 
 const { name, LinkedIN, GitHub } = header[0];
 
@@ -40,12 +40,14 @@ const Header = () => {
 
         <div className="download-btn-wrapper">
           <a
-            href="/your-cv.pdf"
-            download
+            href="./Resume_of_Imamul_Kadir.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="download-btn"
-            data-tooltip="Download CV"
+            data-tooltip="Show Resume"
           >
-            <FaDownload />
+            Resume
+            <FaHandPointRight />
           </a>
         </div>
       </div>
